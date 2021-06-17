@@ -1,9 +1,9 @@
 
-  # d
-  [![License: ](https://img.shields.io/badge/License--yellow.svg)](https://opensource.org/licenses/)
+  # Nickenodeon
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description 
-    * d
+    * A README generator that will create a high quality README for github. It is written in Node.
   ## Table of Contents (Optional)
   
   * [Installation](#installation)
@@ -12,10 +12,10 @@
   * [License](#license)
 
   ## Installation
-    * To install: d
+    * To install: clone repo to your computer, then run "node index" in the terminal after making sure you're in the right directory. 
   
   ## Usage 
-    * Use this program by: d
+    * Use this program by: use is how you want.
   
   ![alt text](assets/images/ss.png)
   
@@ -24,20 +24,20 @@
    * The following folks helped with this project: undefined
   
   ## License
-   * This project uses this license: https://opensource.org/licenses/
+   * This project uses this license: https://opensource.org/licenses/MIT
   
   ## Badges
   
-  * [![License: ](https://img.shields.io/badge/License--yellow.svg)](https://opensource.org/licenses/)
+  * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Features
     * The project has the following features: undefined
   
   ## Contributing
-    * If you'd contribute to this project, consider the following: d 
+    * If you'd contribute to this project, consider the following: I'm not really all that interested in contributions at this time. 
   ## Tests
-    *d
+    *Test if you want, it works fine.
 
   ## Questions?
-  * Reach out to the repository owner d, d, or email at d
+  * Reach out to the repository owner spectocr, https://github.com/spectocr/Nickenodeon, or email at cris.spector@live.com
 

@@ -16,7 +16,7 @@
   
   ## Usage 
     * Use this program by: use is how you want.
-    * Watch it in action here: (https://youtu.be/MLRED0s0ASU)
+    * Watch it in action here: https://youtu.be/MLRED0s0ASU
   
   ![ProjectScreenShot](./ss.png)
 

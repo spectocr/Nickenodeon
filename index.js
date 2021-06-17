@@ -75,6 +75,32 @@ const readMeQuestions = () => {
       },
       {
         type: 'input',
+        name: 'features',
+        message: 'What is your projects features? (Required)',
+        validate: featuresInput => {
+          if (featuresInput) {
+            return true;
+          } else {
+            console.log('Please enter your projects features!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'credits',
+        message: 'Who helped make this project? (Required)',
+        validate: creditsInput => {
+          if (creditsInput) {
+            return true;
+          } else {
+            console.log('Please enter your projects helpers!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
         name: 'installation',
         message: 'What is your projects installation instructions? (Required)',
         validate: installationInput => {

@@ -16,8 +16,9 @@
   
   ## Usage 
     * Use this program by: use is how you want.
+    * Watch it in action here: https://youtu.be/MLRED0s0ASU
   
-  ![alttext](./ss.png)
+  ![ProjectScreenShot](./ss.png)
 
   
   
@@ -32,7 +33,7 @@
   * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Features
-    * The project has the following features: undefined
+    * The project has the following features: JavaScript(Node).
   
   ## Contributing
     * If you'd contribute to this project, consider the following: I'm not really all that interested in contributions at this time. 

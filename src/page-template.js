@@ -1,5 +1,5 @@
 module.exports = templateData => {
-  const { projects, about, ...header } = templateData;
+  const { readMeTitle, description, ...junk } = templateData;
   return `
   # Your Project Title
   * ${readMeTitle}

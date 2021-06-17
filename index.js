@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
-const fs = require('fs');
 const inquirer = require('inquirer');
-const local = require('./utils/generateMarkdown')
+const fs = require('fs');
+const path = require('path');
+const generateMarkdown = require('./utils/generateMarkdown')
 
 
 // TODO: Create an array of questions for user input
@@ -16,6 +17,19 @@ const readMeQuestions = () => {
                 return true;
               } else {
                 console.log('Please enter your GitHub username!');
+                return false;
+              }
+            }
+          },
+          {
+            type: 'input',
+            name: 'email',
+            message: 'What is your contact email? (Required)',
+            validate: emailInput => {
+              if (emailInput) {
+                return true;
+              } else {
+                console.log('Please enter your email!');
                 return false;
               }
             }
@@ -100,7 +114,7 @@ const readMeQuestions = () => {
       },
       {
         type: 'input',
-        name: 'contribution',
+        name: 'tests',
         message: 'What is your projects test instructions? (Required)',
         validate: testInput => {
           if (testInput) {
@@ -115,15 +129,28 @@ const readMeQuestions = () => {
         type: 'checkbox',
         name: 'license',
         message: 'License (Check what applies)',
-        choices: ['None', 'BSD', 'MIT', 'GPL']
+        choices: ['None', 'BSD-3-Clause', 'MIT', 'GPL-3.0']
       },
       
     ])
+    .then((readMeContent) => {
+        console.log(JSON.stringify(readMeContent, null, ''))
+        writeToFile('README.md', generateMarkdown(readMeContent))
+        
+    });
     };
  
 
 // TODO: Create a function to write README file
-function generateMarkdown(fileName, data) {}
+function writeToFile(fileName, readMeContent) {
+   fs.writeFile('./dist/README.md', readMeContent, function (err) {
+    if (err) {
+      return console.log(err);
+    }
+  
+    console.log("Done!");
+  });
+}
 
 // TODO: Create a function to initialize app
 function init()  {
